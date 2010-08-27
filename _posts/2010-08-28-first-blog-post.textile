@@ -3,4 +3,6 @@ layout: post
 title: First Blog Post
 ---
 
+h1. {{ page.title }} p(meta). 28th August 2010 
+
 Hello
