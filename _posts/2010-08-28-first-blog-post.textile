@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: First Blog Post
-categories: [openfoam, c++]
+categories: [openfoam, cplusplus]
 ---
 
 This is the first blog post. Below I have tried out some C++ highlighting:
