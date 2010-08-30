@@ -19,7 +19,6 @@ body {
 #menu {
 	margin-left:2em;
 	width: 600em;
-	padding-top:20px;
 	background:transparent;
 	padding-bottom:20px;
 }
@@ -76,6 +75,20 @@ ul#left_nav a:hover{color:rgb(200,200,200);}
 	text-align: left;
 	width: 900px;
 } 
+
+.title {
+    padding-left:1.1em;
+    color:white;
+    padding-bottom:0.75em;
+    font-weight: bold;
+    font-size:150%;
+}
+
+.title #updateTime{
+    font-size:66%;    
+    font-weight: normal;
+    font-style: italic;
+}
 
 .defaultText {
     padding-left: 2em;   
@@ -165,8 +178,9 @@ td h3 {
 	font-size: 1.2em; 
 	text-align:center;
 	color:white;
-    width:52.5em;
-	}
+    width:60em;
+    margin-left:11em;
+}
 
 .footer img {float:right; }
 
@@ -187,7 +201,7 @@ td h3 {
 -------------------------------------------------------------- */
 
 ul {
-	list-style-type: disc;
+	list-style-type: none;
 }
 
 ul ul, ol ol  {
@@ -276,16 +290,4 @@ tt, code {
 	line-height: 1.125em;
 }
 
-/*standard table */
 
-table
-{ 
-	margin-left: auto;
-	margin-right: auto;
-}
-
-table th, table td {
-	padding: 0.3em 0.4em 0.2em 0.4em;
-}
-
-table th {font-weight:bold;}
