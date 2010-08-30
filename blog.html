@@ -5,6 +5,6 @@ title: lrm29 Web Page | Blog
 
   <h1>Blog Posts</h1>
     {% for post in site.posts %}
-      <br><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+      <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a><br>
     {% endfor %}
 
