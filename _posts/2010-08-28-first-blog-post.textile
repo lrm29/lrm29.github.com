@@ -4,7 +4,12 @@ title: First Blog Post
 ---
 
 h1. {{ page.title }} 
+28th August 2010 
 
-p(meta). 28th August 2010 
+{% highlight c++ %}
+for (int i=0;i<Nf;++i)
+{
+    rho += alpha[i]*mtm.rhod(i);
+}
+{% endhighlight %}
 
-Hello
