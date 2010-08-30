@@ -4,7 +4,7 @@ title: OpenFOAM Fedora 13 Fork
 ---
 
 <p>
-I have forked "OpenFOAM":http://tomdoc.org for Fedora 13. This is because Fedora 13 no longer allows implicit linkage (see "DSO Link Changes":http://fedoraproject.org/wiki/UnderstandingDSOLinkChange).
+I have forked "OpenFOAM":http://www.openfoam.org for Fedora 13. This is because Fedora 13 no longer allows implicit linkage (see "DSO Link Changes":http://fedoraproject.org/wiki/UnderstandingDSOLinkChange).
 </p>
 <p>
 A fix is to change the relevant Make/options files from
