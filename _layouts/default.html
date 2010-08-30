@@ -1,41 +1,62 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title>{{ page.title }}</title>
    <meta name="author" content="Laurence R. McGlashan" />
 
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
-
    <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="css/general.css" type="text/css" media="screen, projection" />
 
 </head>
+
 <body>
 
-<div class="site">
-  <div class="title">
-    <a href="/">Laurence R. McGlashan</a>
-    <a class="extra" href="/">home</a>
-  </div>
-  
-  {{ content }}
-  
-  <div class="footer">
-    <div class="contact">
-      <p>
-        Laurence R. McGlashan<br />
-        lrm29@cam.ac.uk
-      </p>
+
+    <div id="menu">
+	    <ul id="nav">
+		    <li class="activelink"><a href="index.html">home</a></li>
+		    <li><a href="blog.shtml">blog</a></li>
+		    <li><a href="work.html">work</a></li>
+		    <li><a href="teaching.html">teaching</a></li>
+		    <li><a href="cv.html">curriculum vitae</a></li>
+		    <li><a href="contact.html">contact</a></li>
+	    </ul>
     </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/lrm29/">github.com/lrm29</a><br />
-      </p>
+  
+    <div id="content" class="defaultText">
+   
+    {{ content }}
+  
     </div>
-  </div>
-</div>
+  
+    <div class="footer">
+
+    <table>
+    <tr>
+    <td>
+           &copy; 2010 Laurence R. McGlashan <br>
+	        <a href="mailto:lrm29@cam.ac.uk.delete_this_bit">E-Mail</a> 
+           - 
+           <a href="http://como.cheng.cam.ac.uk/index.php?Page=People&amp;Section=lrm29">Work Homepage</a> 
+    </td>
+    <td>
+        <a href="http://validator.w3.org/check?uri=referer"><img
+            style="border:0;width:88px;height:31px"
+            src="http://www.w3.org/Icons/valid-html401"
+            alt="Valid HTML 4.01 Strict"></a>
+        <a style="float: right;" href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!">
+        </a>
+    </td>
+    </tr>
+    </table>
+     
+
+    </div>
+
 
 <a href="http://github.com/lrm29"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
 

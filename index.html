@@ -3,11 +3,17 @@ layout: default
 title: lrm29 Web Page
 ---
 
-<div id="home">
+In 2007 I graduated with a BA and MEng in Chemical Engineering from Robinson College, University of Cambridge and joined the CoMo Group.
+<br>
+<br>
+I am interested in modelling particle formation and transport in reactive flows by the coupling and development of stochastic 
+particle algorithms to both commercial (STAR-CD) and open source (<a href="http://www.openfoam.org">OpenFOAM</a>) computational fluid dynamics (CFD) codes that are 
+capable of handling complex geometries.
+
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-</div>
+
