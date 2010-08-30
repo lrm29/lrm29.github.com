@@ -8,7 +8,7 @@ title: lrm29 Web Page | Blog - Sort By Category
   Sort by: <a href="http://lrm29.github.com/blog">Date</a> | <a href="http://lrm29.github.com/blog_tagSort">Category</a><br>
 
   {% for categories in site.categories %}
-  <h3 id="{{ tag[0] }}" class="vlist">{{ tag[0] }}</h3>
+  <h3 id="{{ categories[0] }}" class="vlist">{{ categories[0] }}</h3>
   <ul>
     {% for post in categories[1] %}
       <li style="list-style-type: none; padding: 2px">
@@ -17,7 +17,7 @@ title: lrm29 Web Page | Blog - Sort By Category
       </li>
     {% endfor %}
   </ul>
-    {% endfor %}
+  {% endfor %}
     
     <br>
 
