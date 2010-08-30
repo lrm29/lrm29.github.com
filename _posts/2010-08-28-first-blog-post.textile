@@ -4,7 +4,9 @@ title: First Blog Post
 ---
 
 h1. {{ page.title }} 
-<img src="http://lrm29.github.com/images/Calendar-Icon.jpg" alt="Calendar Text"> 28th August 2010 
+<div class="blog">
+<img src="http://lrm29.github.com/images/Calendar-Icon.jpg" alt="Calendar Text" width:10px;> 28th August 2010 
+</div>
 
 {% highlight c++ %}
 for (int i=0;i<Nf;++i)
