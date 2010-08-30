@@ -116,7 +116,7 @@ ul#left_nav a:hover{color:rgb(200,200,200);}
 }
 .blogDate img {
     width:15px;
-    float:top;
+    float:left;
 }
 
 .blogEntry {
