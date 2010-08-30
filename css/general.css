@@ -94,6 +94,7 @@ ul#left_nav a:hover{color:rgb(200,200,200);}
     padding-left: 2em;   
     text-align:justify;
     padding-right: 2em;
+    font-style:normal;
 }
 
 .blog {
