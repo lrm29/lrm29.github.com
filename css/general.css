@@ -106,8 +106,7 @@ ul#left_nav a:hover{color:rgb(200,200,200);}
 }
 
 .blogSubject {
-    margin-top: 1.5em;
-    background-color: white;  
+    margin-top: 1em;
     font-weight: bold;
     font-size:150%;
 }
@@ -116,7 +115,7 @@ ul#left_nav a:hover{color:rgb(200,200,200);}
 	
 }
 .blogDate img {
-    width:10px;
+    width:15px;
 }
 
 .blogEntry {
