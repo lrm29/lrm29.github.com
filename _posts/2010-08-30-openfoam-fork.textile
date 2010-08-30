@@ -3,4 +3,29 @@ layout: posts
 title: OpenFOAM Fedora 13 Fork
 ---
 
-I have forked "http://tomdoc.org":OpenFOAM for Fedora 13. This is because Fedora 13 had "http://fedoraproject.org/wiki/UnderstandingDSOLinkChange":DSO
+<p>
+I have forked "OpenFOAM":http://tomdoc.org for Fedora 13. This is because Fedora 13 no longer allows implicit linkage (see "DSO Link Changes":http://fedoraproject.org/wiki/UnderstandingDSOLinkChange).
+</p>
+<p>
+A fix is to change the relevant Make/options files from
+</p>
+
+<pre>
+EXE_INC = \
+    -I$(LIB_SRC)/finiteVolume/lnInclude
+
+EXE_LIBS = -lfiniteVolume
+</pre>
+
+<p>
+to
+</p>
+
+<pre>
+EXE_INC = \
+    -I$(LIB_SRC)/finiteVolume/lnInclude
+
+EXE_LIBS = -L$(FOAM_MPI_LIBBIN) \
+           -lPstream \
+           -lfiniteVolume
+</pre>
