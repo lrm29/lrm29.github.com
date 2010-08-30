@@ -208,7 +208,6 @@ ul {
 ul ul, ol ol  {
 	font-size: 0.9em;
 	margin-top: 0.5em;
-	margin-left: 1.25em;
 }
 
 ul ul ul, ol ol ol, ul li p, ol li p, ul li ul, ul li ol, ol li ul, ol li ol {
