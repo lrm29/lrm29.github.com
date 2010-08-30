@@ -9,7 +9,7 @@ h1. {{ page.title }}
 <img src="http://lrm29.github.com/images/Calendar-Icon.jpg" alt="Calendar Text"> 28th August 2010 
 </div>
 
-{% highlight c++ %}
+{% highlight cpp %}
 for (int i=0;i<Nf;++i)
 {
     rho += alpha[i]*mtm.rhod(i);
