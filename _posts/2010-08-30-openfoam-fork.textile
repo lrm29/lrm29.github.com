@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: OpenFOAM Fedora Fork
+title: OpenFOAM Fedora 13 Fork
 ---
 
-Forked.
+I have forked "http://tomdoc.org":OpenFOAM for Fedora 13. This is because Fedora 13 had "http://fedoraproject.org/wiki/UnderstandingDSOLinkChange":DSO

@@ -3,6 +3,8 @@ layout: posts
 title: First Blog Post
 ---
 
+This is the first blog post. Below I have tried out some C++ highlighting:
+
 {% highlight cpp %}
 for (int i=0;i<Nf;++i)
 {
