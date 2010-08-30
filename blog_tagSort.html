@@ -1,0 +1,23 @@
+---
+layout: default
+title: lrm29 Web Page | Blog - Sort By Category
+---
+
+  <h1>Blog Posts</h1>
+  
+  Sort by: <a href="http://lrm29.github.com/blog">Date</a> | <a href="http://lrm29.github.com/blog_tagSort">Category</a><br>
+
+  {% for categories in site.categories %}
+  <h3 id="{{ tag[0] }}" class="vlist">{{ tag[0] }}</h3>
+  <ul>
+    {% for post in categories[1] %}
+      <li style="list-style-type: none; padding: 2px">
+        <span>{{ post.date | date:"%d %b %Y" }}</span> &nbsp;
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+    {% endfor %}
+    
+    <br>
+

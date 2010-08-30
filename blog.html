@@ -1,9 +1,12 @@
 ---
 layout: default
-title: lrm29 Web Page | Blog
+title: lrm29 Web Page | Blog - Sort By Date
 ---
 
   <h1>Blog Posts</h1>
+  
+    Sort by: <a href="http://lrm29.github.com/blog">Date</a> | <a href="http://lrm29.github.com/blog_tagSort">Category</a><br>
+  
     {% for post in site.posts %}
       <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a><br>
     {% endfor %}

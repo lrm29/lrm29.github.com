@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: OpenFOAM Fedora 13 Fork
+categories: [openfoam,fedora]
 ---
 
 <p>
