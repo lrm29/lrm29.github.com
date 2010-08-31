@@ -39,8 +39,7 @@ ul#nav a{
 	padding: 3px 0 5px;
 	text-decoration:none;
 	background: white;
-	color: #999;
-	font-weight: bold;
+	color: black;
 }
 ul#nav li.activelink a,ul#nav a:hover{
 	color: #000;
