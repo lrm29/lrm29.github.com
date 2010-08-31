@@ -296,4 +296,21 @@ tt, code {
 	line-height: 1.125em;
 }
 
+.linkTable {
+
+}
+
+.linkTable td{
+    border-left:1px solid #888;
+    border-bottom:1px solid #888;
+}
+
+.linkTable .topRow{
+    width:12em;
+    font-size:125%;
+    border-bottom: 3px solid #999;
+    border-left:none;
+    background-color:#999;
+}
+
 
