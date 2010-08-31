@@ -32,7 +32,6 @@ ul#nav li{
 	width:120px;
 	margin-right:2px;
 	text-align: center;
-	font-style: bold;
 }
 ul#nav a{
 	float:left;
@@ -40,7 +39,8 @@ ul#nav a{
 	padding: 3px 0 5px;
 	text-decoration:none;
 	background: white;
-	color: #999
+	color: #999;
+	font-style: bold;
 }
 ul#nav li.activelink a,ul#nav a:hover{
 	color: #000;
