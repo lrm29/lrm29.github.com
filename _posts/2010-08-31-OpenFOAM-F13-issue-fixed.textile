@@ -1,0 +1,14 @@
+---
+layout: posts
+title: OpenFOAM/F13 Linking Issue Fixed
+categories: [openfoam, fedora]
+---
+
+The issue in post "OpenFOAM Fedora 13 Fork":/openfoam/fedora/2010/08/30/openfoam-fork.html has been fixed in the OpenFOAM-1.7.x repository. Fedora's Gcc has implicit linking turned off.
+
+To turn it back on again add the following option to g++:
+
+{% highlight bash %}
+-Xlinker --add-needed
+{% endhighlight %}
+
