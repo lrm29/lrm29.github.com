@@ -31,7 +31,8 @@ ul#nav li{
 	float:left;
 	width:120px;
 	margin-right:2px;
-	text-align: center
+	text-align: center;
+	font-style: bold;
 }
 ul#nav a{
 	float:left;
