@@ -1,0 +1,19 @@
+---
+layout: posts
+title: Profiling C++ Code
+categories: [openfoam, programming]
+---
+Recently I used profiling on some c++ libraries I wrote for use with "OpenFOAM&reg;":http://www.openfoam.org. Profiling allows you to see how much time your program spends inside each function. Using this, within half an hour I managed to reduce the cpu time of the code by around 70%. The offending code was calculating an integral, which contained many uses of the pow() function. The cpu time was easily reduced by precalculating some of these outside the integral and using sqr(x) instead of pow(x,2).
+<br>
+You can use gprof, but all the code needs to be recompiled using the -pg option. Instead you can use Cachegrind or Callgrind which don't require your code to be recompiled. The disadvantage is that they cause the code to run slower.
+<br>
+I used "Callgrind":http://valgrind.org/docs/manual/cl-manual.html, a tool that is part of "Valgrind":http://valgrind.org. It's executed using:
+
+{% highlight bash %}
+valgrind --tool=callgrind <executableName>
+kcachegrind
+{% endhighlight %}
+
+When the simulation is done you'll see a callgrind file in the current directory. Opening it with "kcachegrind":http://kcachegrind.sourceforge.net/html/Home.html allows you to easily trace through the functions that have been called. You can even generate nice looking call graphs to help you trace function calls:
+
+<img src="/images/callGraph.jpg" alt="Call graph">
