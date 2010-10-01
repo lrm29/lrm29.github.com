@@ -5,7 +5,7 @@ categories: [openfoam, programming]
 ---
 
 <div class="centreDownload">
-            Download my CV <a href="http://lrm29.github.com/files/0001-RADAU-added-to-ODESolvers.patch">
+            Download RADAU Patch <a href="http://lrm29.github.com/files/0001-RADAU-added-to-ODESolvers.patch">
             <img src="http://lrm29.github.com/images/download.jpg" alt="Click to Download">
             </a>
         </div>
