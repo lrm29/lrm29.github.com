@@ -1,0 +1,21 @@
+---
+layout: posts
+title: Eclipse Helios and Fedora 14
+categories: [fedora, programming]
+---
+
+I found that the C++ indexer in Eclipse Helios crashed the application in Fedora 14. Obviously this was
+slightly annoying if I want to use it as an IDE...
+
+Anyway, apparently it's due to Java, and there's a simple hack here to get it working:
+
+"Eclipse CDT indexer crashes in Fedora 14":https://bugzilla.redhat.com/show_bug.cgi?id=647737
+
+In essence, just add the following to /etc/eclipse.ini:
+
+{% highlight bash %}
+-XX:-UseCompressedOops
+{% endhighlight %}
+
+This is just a quick fix: They're continuing to find a proper solution.
+
