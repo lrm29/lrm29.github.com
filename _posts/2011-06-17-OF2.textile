@@ -6,6 +6,13 @@ categories: [openfoam]
 
 "OpenFOAM-2.0":http://www.openfoam.com has been released, and there are lots of exciting "new features":http://www.openfoam.com/version2.0.0!
 
-<br>
-
 I'm happy to say that the "Git repository":http://www.openfoam.com/download/git.php installs on Fedora 15 smoothly.
+
+The namespace storing math constants had changed, so to update all the namespace declarations in my own code I ran the following:
+
+{% highlight bash %}
+grep -lre 'mathematicalConstant::' . | xargs -d'\n' sed -i 's/mathematicalConstant::/constant::mathematical::/g'
+{% endhighlight %}
+
+Hope that helps some of you.
+
