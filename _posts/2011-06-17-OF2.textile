@@ -1,0 +1,11 @@
+---
+layout: posts
+title: OpenFOAM-2.0 Released
+categories: [openfoam]
+---
+
+"OpenFOAM-2.0":http://www.openfoam.com has been released, and there are lots of exciting "new features":http://www.openfoam.com/version2.0.0!
+
+<br>
+
+I'm happy to say that the "Git repository":http://www.openfoam.com/download/git.php installs on Fedora 15 smoothly.
