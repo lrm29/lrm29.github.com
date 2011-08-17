@@ -1,0 +1,22 @@
+---
+layout: posts
+title: Writing Dimensional Units in LaTeX
+categories: [latex, programming]
+---
+
+This is the first blog post. Below I have tried out some C++ highlighting:
+
+{% highlight latex %}
+\newcommand{\dimensions}[5]{\ensuremath{\
+    \ifthenelse{\equal{#1}{0}}{}{\ifthenelse{\equal{#1}{1}}{\text{kg}\ }{\text{kg}^{#1}\ }}%
+        \ifthenelse{\equal{#2}{0}}{}{\ifthenelse{\equal{#2}{1}}{\text{m}\ }{\text{m}^{#2}\ }}%
+            \ifthenelse{\equal{#3}{0}}{}{\ifthenelse{\equal{#3}{1}}{\text{s}\ }{\text{s}^{#3}\ }}%
+                \ifthenelse{\equal{#4}{0}}{}{\ifthenelse{\equal{#4}{1}}{\text{K}\ }{\text{K}^{#4}\ }}%
+                    \ifthenelse{\equal{#5}{0}}{\!}{\ifthenelse{\equal{#5}{1}}{\text{kmol}}{\text{kmol}^{#5}}}}}
+                    
+\newcommand{\dimT}{\dimensions{0}{0}{0}{1}{0}}
+\newcommand{\dimWatt}{\dimensions{1}{2}{-3}{0}{0}}
+\newcommand{\dimJoule}{\dimensions{1}{2}{-2}{0}{0}}
+\newcommand{\dimPascal}{\dimensions{1}{-1}{-2}{0}{0}}
+{% endhighlight %}
+
