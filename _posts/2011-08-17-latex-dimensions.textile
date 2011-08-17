@@ -23,5 +23,3 @@ You can then define shortcuts to make things even easier:
 \newcommand{\dimJoule}{\dimensions{1}{2}{-2}{0}{0}}
 \newcommand{\dimPascal}{\dimensions{1}{-1}{-2}{0}{0}}
 {% endhighlight %}
-
-$\mu$
