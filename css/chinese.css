@@ -8,7 +8,6 @@ body {
 
 #ch {
 	font-family: Verdana,  sans-serif;
-    font-weight: bold;
 	font-size: 120%;     /* rumoured that sizes < 76%            */
 	color: black;        /*     cause problems ins some browsers */
     line-height: 1.48em;    /* 1.125 * 100 = 1.48 * 76% */
