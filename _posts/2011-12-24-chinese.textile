@@ -1,0 +1,7 @@
+---
+layout: chinese_posts
+title: First Chinese (中文) Blog Post
+categories: [chinese]
+---
+
+你好
