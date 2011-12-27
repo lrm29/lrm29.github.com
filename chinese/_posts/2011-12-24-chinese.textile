@@ -3,4 +3,38 @@ layout: chinese_posts
 title: First Chinese (中文) Blog Post
 ---
 
-你好
+你好, 我叫劳伦思。我学说中文。
+
+<table>
+<tr>
+  <td>我</td>
+  <td>I</td>
+</tr>
+<tr>
+  <td>你</td>
+  <td>you</td>
+</tr>
+<tr>
+  <td>好</td>
+  <td>good</td>
+</tr>
+<tr>
+  <td>叫</td>
+  <td>called</td>
+<tr>
+  <td>劳伦思</td>
+  <td>Laurence</td>
+</tr>
+<tr>
+  <td>学</td>
+  <td>learn</td>
+</tr>
+<tr>
+  <td>说</td>
+  <td>speak</td>
+</tr>
+<tr>
+  <td>中文</td>
+  <td>Chinese</td>
+</tr>
+</table>
