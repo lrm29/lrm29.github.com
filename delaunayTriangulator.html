@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <title>Delaunay Triangulation</title>
+
+    <script src="js/delaunayCanvas.js"></script>
+
+    <style type="text/css">
+      body
+      {
+        margin: 0px;
+        padding: 0px;
+      }
+      canvas
+      {
+        background-color: white;
+        border: 5px solid black;
+      }
+      td
+      {
+        vertical-align:top;
+      }
+    </style>
+
+<body onload="initDelaunay()">
+
+
+<table>
+<tr>
+<td align="center"><h2>Delaunay Triangulation</h2></td>
+</tr>
+<tr>
+    <td>
+        <canvas id="example" width="800" height="600">
+            This text is displayed if your browser does not support HTML5 Canvas.
+        </canvas>
+    </td>
+
+    <td>
+        <table>
+            <tr><b>Current Coordinates</b></tr>
+            <tr><td>(Origin is top left)</td></tr>
+            <tr><td>x = <span id="xcoord">-</span></td></tr>
+            <tr><td>y = <span id="ycoord">-</span></td></tr>
+        </table>
+
+        <hr>
+
+        <form>
+            <table>
+            <tr><b>Settings</b></tr>
+            <tr>
+            <td>Show Circumspheres : </td>
+            <td><input id="circumsphere" value="false" type="checkbox" /></td>
+            </tr>
+            <tr>
+            <td>Show Delaunay : </td>
+            <td><input id="showDelaunay" value="true" type="checkbox" checked="checked"/></td>
+            </tr>
+            <tr>
+            <td>Show Voronoi : </td>
+            <td><input id="showVoronoi" value="false" type="checkbox" /></td>
+            </tr>
+            </table>
+        </form>
+
+        <hr>
+
+        <table>
+          <tr><b>Instructions</b></tr>
+          <tr>
+            <td><b>Left click</b></td>
+            <td> : </td>
+            <td>Insert point</td>
+          </tr>
+          <tr>
+            <td><b>Right click</b></td>
+            <td> : </td>
+            <td>Delete point</td>
+          </tr>
+        </table>
+
+        <hr>
+
+        <b>Insert point with coordinates:</b> <br>
+        x = <input id="inputx" value="0" type="field" /> <br>
+        y = <input id="inputy" value="0" type="field" /> <br>
+        <button id="inputPoint">Input Point</button>
+
+        <hr>
+
+        <button id="save">Save Image</button>
+        <button id="reset">Clear Image</button> <br>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>
+
