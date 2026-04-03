@@ -1,0 +1,14 @@
+<article class="article-card mt-3">
+  <a class="article-card-inner" href="{{ with .Params.externalUrl }}{{ . }}{{ else }}{{ .Permalink }}{{ end }}" {{ with .Params.externalUrl }}target="_blank" rel="external"{{ end }}>
+    <h3 class="article-card-title">
+      {{ .Title | emojify }}
+      {{ with .Params.externalUrl }}<span class="article-card-ext">&#8599;</span>{{ end }}
+    </h3>
+    <div class="article-card-meta">
+      {{ partial "article-meta.html" . }}
+    </div>
+    {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
+      <p class="article-card-summary">{{ .Summary | plainify | emojify }}</p>
+    {{ end }}
+  </a>
+</article>

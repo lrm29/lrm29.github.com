@@ -1,0 +1,89 @@
+baseURL = "https://laurencemcglashan.com/"
+languageCode = "en-gb"
+defaultContentLanguage = "en"
+title = "Laurence McGlashan"
+theme = "congo"
+
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    style = "monokai"
+    lineNos = false
+
+[params]
+  colorScheme = "slate"
+  defaultAppearance = "dark"
+  autoSwitchAppearance = true
+  enableSearch = true
+  enableCodeCopy = true
+  description = "Software engineer with a background in engineering and computational science."
+
+  [params.author]
+    name = "Laurence McGlashan"
+    headline = "Software engineer. Previously research at Cambridge."
+    bio = "Building things."
+    links = [
+      { github = "https://github.com/lrm29" },
+      { linkedin = "https://www.linkedin.com/in/laurence-mcglashan-4a58021a1" },
+      { email = "mailto:mail@laurencemcglashan.com" },
+    ]
+
+  [params.homepage]
+    layout = "profile"
+    showRecent = false
+
+  [params.header]
+    layout = "basic"
+    showTitle = true
+
+  [params.footer]
+    showCopyright = true
+    showThemeAttribution = false
+    showScrollToTop = true
+
+  [params.article]
+    showDate = true
+    showAuthor = false
+    showReadingTime = false
+    showBreadcrumbs = false
+    showHeadingAnchors = true
+    showPagination = true
+    showTaxonomies = true
+    showTableOfContents = false
+
+  [params.list]
+    showBreadcrumbs = false
+    showSummary = true
+    groupByYear = false
+
+[menu]
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    pageRef = "projects"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    pageRef = "blog"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "search"
+    weight = 30
+    [menu.main.params]
+      action = "search"

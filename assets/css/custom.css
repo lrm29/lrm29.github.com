@@ -1,0 +1,48 @@
+/* Background — Claude-style dark charcoal, via Congo's color variable */
+html.dark {
+  --color-neutral-800: 40, 42, 48;
+}
+
+.article-card {
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  margin-bottom: 0.75rem;
+}
+
+.article-card:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.article-card-inner {
+  display: block;
+  padding: 1rem 1.25rem;
+  text-decoration: none !important;
+}
+
+.article-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: inherit;
+  margin: 0 0 0.2rem;
+}
+
+.article-card-ext {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  margin-left: 0.2rem;
+}
+
+.article-card-meta {
+  font-size: 0.78rem;
+  opacity: 0.5;
+  margin-bottom: 0.4rem;
+}
+
+.article-card-summary {
+  font-size: 0.875rem;
+  opacity: 0.75;
+  margin: 0;
+  line-height: 1.5;
+}
