@@ -15,4 +15,4 @@ The core numerical methods implemented were the **Quadrature Method of Moments (
 
 **Methods:** QMoM · DQMoM · Euler/Euler · OpenFOAM · C++
 
-[Download presentation (PDF)](/files/lrm29GCpresentation.pdf)
+[Download presentation (PDF)](/files/phd.pdf)
